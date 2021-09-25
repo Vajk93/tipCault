@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --darkGreen:#00494D;
+  --lightGreen: #26C0AB;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #C5E4E7;
+  font-family: 'Space Mono', monospace;
+}
+
+header {
+  text-align: center;
+  margin-top: 80px;
+}
+header p {
+  letter-spacing: 5px;
+  color: #00494D;
+  font-weight: 700;
+}
+
+main {
+  width: 800px;
+  height: 420px;
+  background: white;
+  margin: 80px auto auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/***********************************************************************************/
+/********************************* white section ***********************************/
+/***********************************************************************************/
+.white-section {
+width:360px;
+height: 360px;
+margin-right: 10px;
+padding: 10px;
+}
+
+.white-section span {
+  font-size: .8em;
+  color:red;
+}
+
+.buttons-and-one-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  font-size: 1.1em;
+}
+.buttons-and-one-input div {
+  display: flex;
+  
+}
+.buttons-and-one-input div div {
+  margin: 5px;
+  height: 40px;
+  width: 100%;
+  background: var(--darkGreen);
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 100ms;
+}
+.buttons-and-one-input div div:hover,
+.buttons-and-one-input div div:active {
+  background-color: var(--lightGreen);
+  transition: 100ms;
+}
+
+.custom-input-field {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F4FAFA;
+  font-size: 1.1em;
+  color: var(--darkGreen);
+  font-weight: 700;
+}
+.custom-input-field:focus {
+  outline: none;
+}
+
+.two-basic-input-field {
+  position: relative;
+  width: 100%;
+  color:var(--darkGreen);
+}
+.two-basic-input-field input {
+  padding-left: 24px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: #F4FAFA;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--darkGreen);
+}
+.two-basic-input-field input:focus {
+  outline: none; 
+}
+
+.two-basic-input-field svg {
+  position: absolute;
+  left: 0px;
+  padding: 10px 12px;
+  pointer-events: none;
+  top: 0;
+}
+
+
+/***********************************************************************************/
+/********************************* green section ***********************************/
+/***********************************************************************************/
+.green-section {
+  width:360px;
+  height: 360px;
+  background:var(--darkGreen);
+  margin-left: 10px;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.resuts-dives {
+  display: flex;
+ flex-direction: column;
+}
+
+.result-div {
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+
+.result-div div:nth-child(1) {
+  color:white;
+}
+.result-div div:nth-child(1) span {
+  font-size: 0.8em;
+}
+.result-div div:nth-child(2) {
+  font-size: 2.5em;
+  color: var(--lightGreen);
+  font-weight: 700;
+}
+
+.green-section button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  top: 50px;
+  background: var(--lightGreen);
+  color: var(--darkGreen);
+  font-weight: 700;
+  border:none;
+  transition: 100ms;
+}
+.green-section button:hover,
+.green-section button:active {
+  background-color: #C5E4E7;
+  transition: 100ms;
+}
+
+/***********************************************************************************/
+/****************************** queries for responsivity ***************************/
+/***********************************************************************************/
+@media screen and (max-width: 800px) {
+  main {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .white-section {
+    width: auto;
+  }
+  .green-section {
+    width: 100%;
+  }
+  .green-section button {
+    top: 40px;
+  }
+}
+
+
+
+
